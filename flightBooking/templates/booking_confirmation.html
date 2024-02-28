@@ -1,0 +1,21 @@
+<!-- templates/booking_confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <h2>Booking Confirmation</h2>
+    <p>Thank you for booking your flight!</p>
+    <p>Booking details:</p>
+    <ul>
+        <li>Flight: {{ booking.flight }}</li>
+        <li>Quantity: {{ booking.quantity }}</li>
+        <li>Total Price: ${{ booking.total_price }}</li>
+        <!-- Add more booking details as needed -->
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
